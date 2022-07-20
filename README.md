@@ -1,6 +1,10 @@
 # Back-end do Projeto pro Desafio ÇuÇ
 
 ## Software Alvo (Desafio)
+### Participantes:
++ [Alex Custódio](https://github.com/alex-custodio)
++ [Thiago Almeida](https://github.com/ThiagoAlmeida0)
+
 Criar uma aplicação Flutter ou React Native que se conecte com o back-end em java puro; acessando a Blockchain do Ethereum através de Smart Contracts.
 
 ## Nossa implementação:
