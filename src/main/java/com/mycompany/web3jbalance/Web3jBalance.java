@@ -19,6 +19,7 @@ public class Web3jBalance {
                 new HttpService("insert here your infura.io mainnet endpoint")
         );
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter the public key:");
         final String ethAdress = input.nextLine(); //insert here your ethereum adress
         
         final EthGetBalance balanceResponse = client.ethGetBalance(
