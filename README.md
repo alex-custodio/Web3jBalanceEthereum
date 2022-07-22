@@ -29,7 +29,7 @@ Após preencher este campo com o o endpoint mainnet, o programa deverá executar
 
 ## Entrada do Programa (endereços podem ser pegados para teste no site etherscan, que lista os mesmos dados que são listados através do programa, inclusive para verificar a veracidade da execução do programa)
 
-No seu navegador, após executar o arquivo Main (onde está o código do servidor), utilize da seguinte forma
+No seu navegador, após executar o arquivo Main (onde está o código do servidor), utilize da seguinte forma a requisição:
 ```
 http://localhost:9999/UnscaledBalance/chavepublica
 http://localhost:9999/ScaledBalance/chavepublica
