@@ -19,22 +19,24 @@ Este repositório guarda o código do back-end em java da aplicação almejada n
 + Netbeans (VS Code não tankou)
 
 ## Como funciona
-Após as importações e estruturas básicas, a linha 18 inicializa a conexão cliente necessária para se comunicar com a Blockchain do Ethereum. Para o código funcionar é necessário inserir um endpoint seu que pode ser gerado no site [infura.io](https://infura.io) após criar uma conta, um projeto com qualquer nome e ser resgatado nessa área marcada de preto com um endereço.
+Após as importações e estruturas básicas, a linha a seguir inicializa o cliente necessário para se comunicar com a Blockchain do Ethereum. Para o código funcionar é necessário inserir um endpoint seu que pode ser gerado no site [infura.io](https://infura.io) após criar uma conta, um projeto com qualquer nome e ser resgatado nessa área marcada de preto com um endereço.
 
 ![screenshot-readme](https://user-images.githubusercontent.com/89322317/180072980-bbd14323-8152-45ce-8e3c-01f34632ee5a.png)
 ```
-18 -    final Web3j client = Web3j.build(new HttpService("insert here your infura.io mainnet endpoint"));
+client = Web3j.build(new HttpService("insert here your infura.io mainnet endpoint"));
 ```
 Após preencher este campo com o o endpoint mainnet, o programa deverá executar normalmente lendo através de um scanner alguma chave pública, sendo necessário digitar essa chave.
 
 ## Entrada do Programa (endereços podem ser pegados para teste no site etherscan, que lista os mesmos dados que são listados através do programa, inclusive para verificar a veracidade da execução do programa)
+
+No seu navegador, após executar o arquivo Main (onde está o código do servidor), utilize da seguinte forma
 ```
-Enter the public key:
-0xExemplo
+http://localhost:9999/UnscaledBalance/chavepublica
+http://localhost:9999/ScaledBalance/chavepublica
 ```
 ## Saída do Programa (exemplo)
 ```
-Unscaled Balance: 10
-Scaled Balance: 0.0010 Ether
+(No caso da UnscaledBalance) 10
+(no caso da ScaledBalance) 0.0010 Ether
 ```
 
